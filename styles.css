@@ -5,6 +5,12 @@ body{
     min-height: 256px;
 }
 
+div.to-dos {
+    align-self: center;
+    width: 35wh;
+    height: 20vh;
+}
+
 div.current{
-    background-color: aqua;
+    background-color: #f0ffff;
 }
