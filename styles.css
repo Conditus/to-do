@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 520px;
+    min-height: 256px;
+}
+
+div.current{
+    background-color: aqua;
+}
