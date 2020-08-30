@@ -3,19 +3,36 @@
     <head>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="../styles.css">
+
 		<title>Test to-do</title>
 	</head>
     <body>
 
-        <div class="to-dos">
-            <div class="current">
-                current goals
-                <div class="block"><input type="button" class="move_button"><input type="checkbox" class="checkbox_class"><input type="text" class="text_class"><input type="button" class="delete_button"></div>
-            </div>
-            <button onclick="New_todo" class="adding_button">+</button>
-            <div class="done">
-                goals are done
+        <div class="current">
+            <h1> current goals </h1>
+            <div class="current" id="test-test">
+                <button onclick="NewTodo()" class="adding_button" id="add_button">+</button>
             </div>
         </div>
+        <div class="to-dos">
+            <div class="done">
+                <h1> done list </h1>
+            </div>
+        </div>
+
+        <script>
+            function NewTodo(){
+                var div = document.createElement('div');
+                div.innerHTML='<div class="block"><input type="button" class="move_button"><input type="checkbox" class="checkbox_class"><input type="text" class="text_class"><input type="button" class="delete_button"></div>'
+                var myDiv = document.getElementById("test-test");
+                parentDiv = myDiv.parentNode;
+                parentDiv.insertBefore(div, myDiv);
+
+            }
+            function Done(){
+
+            }
+        </script>
+
     </body>
 </html>
