@@ -14,3 +14,35 @@ div.to-dos {
 div.current{
     background-color: #f0ffff;
 }
+
+div.block {
+    background-color: teal;
+    padding: 2px;
+}
+
+.move_button{
+    height: 26px;
+    vertical-align: middle;
+}
+
+.checkbox_class {
+    padding: inherit;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+.text_class {
+    height: 20px;
+    vertical-align: middle;
+}
+
+.delete_button {
+    height: 26px;
+    width: 26px;
+    vertical-align: middle;
+}
+
+.adding_button {
+    border-color: white;
+    border-radius: 50%;
+}
