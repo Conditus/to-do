@@ -23,7 +23,7 @@
         <script>
             function NewTodo(){
                 var div = document.createElement('div');
-                div.innerHTML='<div class="block"><input type="button" class="move_button"><input type="checkbox" class="checkbox_class"><input type="text" class="text_class"><input type="button" class="delete_button"></div>'
+                div.innerHTML='<div class="block"><input type="button" class="move_button"><input type="checkbox" class="checkbox_class"><input type="text" class="text_class"><input type="button" class="delete_button" onclick="Delete(this)"></div>'
                 var myDiv = document.getElementById("test-test");
                 parentDiv = myDiv.parentNode;
                 parentDiv.insertBefore(div, myDiv);
@@ -31,6 +31,10 @@
             }
             function Done(){
 
+            }
+            function Delete(elem){
+                var element = elem.parentElement
+                element.remove();
             }
         </script>
 
