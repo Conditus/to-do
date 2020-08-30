@@ -12,17 +12,24 @@ div.to-dos {
 }
 
 div.current{
-    background-color: #f0ffff;
+
 }
 
 div.block {
-    background-color: teal;
+    background-color: powderblue;
     padding: 2px;
+    width: 260px;
+    border-radius: 5px
 }
 
 .move_button{
-    height: 26px;
+    height: 20px;
+    width: 15px;
+    border: none;
     vertical-align: middle;
+    background-color: transparent;
+    background-image: url(https://cdn.iconscout.com/icon/free/png-256/drag-indicator-1779315-1512591.png);
+    background-size: cover;
 }
 
 .checkbox_class {
@@ -34,6 +41,21 @@ div.block {
 .text_class {
     height: 20px;
     vertical-align: middle;
+    background-color: inherit;
+    box-shadow: none;
+    outline: inherit;
+}
+
+.edit_button {
+    height: 26px;
+    width: 26px;
+    border: none;
+    vertical-align: middle;
+    background-color: transparent;
+    background-image: url(https://www.materialui.co/materialIcons/action/done_black_2048x2048.png);
+    background-size: cover;
+
+
 }
 
 .delete_button {
@@ -41,6 +63,7 @@ div.block {
     width: 26px;
     border: none;
     vertical-align: middle;
+    background-color: transparent;
     background-image: url(https://img.icons8.com/cotton/2x/delete-sign--v2.png);
     background-size: cover;
 
