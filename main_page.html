@@ -10,26 +10,36 @@
 
         <div class="current">
             <h1> current goals </h1>
-            <div class="current" id="test-test">
-                <button onclick="NewTodo()" class="adding_button" id="add_button">+</button>
-            </div>
+            <div class="current" id="current"></div>
+            <button onclick="NewTodo()" class="adding_button" id="add_button">+</button>
         </div>
         <div class="to-dos">
             <div class="done">
                 <h1> done list </h1>
+                <div class="current" id="to-dos"> </div>
             </div>
         </div>
 
         <script>
             function NewTodo(){
                 var div = document.createElement('div');
-                div.innerHTML='<div class="block"><input type="button" class="move_button"><input type="checkbox" class="checkbox_class"><input type="text" class="text_class"><input type="button" class="delete_button" onclick="Delete(this)"></div>'
-                var myDiv = document.getElementById("test-test");
+                div.innerHTML='<div class="block"><input type="button" class="move_button"><input type="checkbox" class="checkbox_class" onclick="Done(this)"><input type="text" class="text_class"><input type="button" class="delete_button" onclick="Delete(this)"></div>'
+                var myDiv = document.getElementById("current");
                 parentDiv = myDiv.parentNode;
                 parentDiv.insertBefore(div, myDiv);
 
             }
-            function Done(){
+            function Done(elem){
+                var status = elem.checked
+                var element = elem.parentElement;
+                if(status === false){
+                    var myDiv = document.getElementById("current");
+                    myDiv.appendChild(element);
+                }
+                else{
+                    var myDiv = document.getElementById("to-dos");
+                    myDiv.appendChild(element);
+                }
 
             }
             function Delete(elem){
