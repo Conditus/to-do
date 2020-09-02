@@ -7,13 +7,10 @@ body{
 }
 
 
-.base{
-
-}
-
 div.current{
     width: 320px;
     margin: auto;
+
 }
 
 div.to-dos {
@@ -27,6 +24,8 @@ div.block {
     padding: 2px;
     width: 324px;
     border-radius: 5px;
+    box-shadow: -5px 5px 17px gray;
+    margin: 10px;
 }
 
 .checkbox_class {
@@ -42,7 +41,7 @@ div.block {
     vertical-align: middle;
     border: powderblue ;
     outline-color: teal;
-
+    width: 240px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -77,5 +76,6 @@ div.block {
     background-image: url(https://img.icons8.com/pastel-glyph/2x/plus.png);
     background-size: cover;
     outline: inherit;
-    margin-left: 88%
+    margin-left: 88%;
+    margin-top: 10px;
 }

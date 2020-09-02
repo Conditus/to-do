@@ -6,7 +6,6 @@ function NewTodo() {
     var myDiv = document.getElementById("current");
     parentDiv = myDiv.parentNode;
     parentDiv.insertBefore(div, myDiv);
-
 }
 
 
@@ -42,11 +41,18 @@ function Delete(elem) {
 
 function Edit(elem) {
     if (window.getComputedStyle(elem).getPropertyValue('background-image') === 'url("https://www.materialui.co/materialIcons/action/done_black_2048x2048.png")'){
-        elem.style.backgroundImage = "url(https://i.pinimg.com/originals/e4/2b/fd/e42bfd6e6759a875919f8726c41abfad.png)";
+        elem.style.backgroundImage = "url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698651-icon-135-pen-angled-512.png)";
         elem.previousSibling.disabled = true;
     }
     else {
         elem.style.backgroundImage = "url(https://www.materialui.co/materialIcons/action/done_black_2048x2048.png)";
         elem.previousSibling.disabled = false;
     }
+
 }
+
+/*
+
+var itemsArray = [];
+localStorage.setItem('items', JSON.stringify(itemsArray))
+const data = JSON.parse(localStorage.getItem('items'))*/
