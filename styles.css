@@ -3,33 +3,30 @@ body{
     padding: 0;
     min-width: 520px;
     min-height: 256px;
+    font-family: 'Roboto', sans-serif;
 }
 
-div.to-dos {
-    align-self: center;
-    width: 35wh;
-    height: 20vh;
+
+.base{
+
 }
 
 div.current{
-
+    width: 320px;
+    margin: auto;
 }
+
+div.to-dos {
+    margin: auto;
+    width: 320px;
+}
+
 
 div.block {
     background-color: powderblue;
     padding: 2px;
-    width: 260px;
-    border-radius: 5px
-}
-
-.move_button{
-    height: 20px;
-    width: 15px;
-    border: none;
-    vertical-align: middle;
-    background-color: transparent;
-    background-image: url(https://cdn.iconscout.com/icon/free/png-256/drag-indicator-1779315-1512591.png);
-    background-size: cover;
+    width: 324px;
+    border-radius: 5px;
 }
 
 .checkbox_class {
@@ -37,13 +34,16 @@ div.block {
     height: 20px;
     width: 20px;
     vertical-align: middle;
+    outline: inherit;
 }
-.text_class {
+
+.text_area {
     height: 20px;
     vertical-align: middle;
-    background-color: inherit;
-    box-shadow: none;
-    outline: inherit;
+    border: powderblue ;
+    outline-color: teal;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .edit_button {
@@ -54,8 +54,7 @@ div.block {
     background-color: transparent;
     background-image: url(https://www.materialui.co/materialIcons/action/done_black_2048x2048.png);
     background-size: cover;
-
-
+    outline: inherit;
 }
 
 .delete_button {
@@ -64,12 +63,19 @@ div.block {
     border: none;
     vertical-align: middle;
     background-color: transparent;
-    background-image: url(https://img.icons8.com/cotton/2x/delete-sign--v2.png);
+    background-image: url(https://static.thenounproject.com/png/2995127-200.png);
     background-size: cover;
-
+    outline: inherit;
 }
 
 .adding_button {
-    border-color: white;
+    border-color: inherit;
     border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    background-color: inherit;
+    background-image: url(https://img.icons8.com/pastel-glyph/2x/plus.png);
+    background-size: cover;
+    outline: inherit;
+    margin-left: 88%
 }
