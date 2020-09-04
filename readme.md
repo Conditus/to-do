@@ -1,4 +1,1 @@
-read
-test
-
-And this is the stroke I've written from my PC to Git Hub
+It is the Second version of my to-do. Much better and sweeter)
