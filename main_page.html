@@ -3,25 +3,35 @@
     <head>
 		<meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="../styles.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
 
 		<title>Test to-do</title>
 	</head>
     <body>
 
-        <div class="base">
+        <form class="base">
             <div class="current">
-                <h1> Current goals </h1>
+                <h1> Current goals</h1>
                 <div class="current" id="current"></div>
                 <input type="button" onclick="NewTodo()" class="adding_button" id="adding_button">
             </div>
             <div class="to-dos">
                 <div class="done">
-                    <h1> Done list </h1>
-                    <div class="current" id="to-dos"> </div>
+                    <h1> Done list</h1>
+                    <div class="current" id="to-dos"></div>
                 </div>
             </div>
-        </div>
+        </form>
+
+        <form>
+            <div>
+                <h1 class="current_test">Current test</h1>
+                <input type="button" onclick="create_new_to_do_element()" class="adding_button" id="adding_button">
+            </div>
+            <div>
+                <h1 class="done_test">Done test</h1>
+            </div>
+        </form>
 
         <script src="creating_new_to-do_item.js"></script>
     </body>

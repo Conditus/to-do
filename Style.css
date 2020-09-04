@@ -7,25 +7,15 @@ body{
 }
 
 
-.current_test{
-
-}
-
-.done_test {
-
-}
-
-div.current{
-    width: 344px;
-    margin: auto;
-
-}
-
-div.to-dos {
-    width: 344px;
+#current_test{
+    width: 340px;
     margin: auto;
 }
 
+#done_test {
+    width: 340px;
+    margin: auto;
+}
 
 div.block {
     background-color: powderblue;
@@ -42,6 +32,7 @@ div.block {
     width: 20px;
     vertical-align: middle;
     outline: inherit;
+    cursor: pointer;
 }
 
 .text_area {
@@ -63,6 +54,7 @@ div.block {
     background-image: url(https://www.materialui.co/materialIcons/action/done_black_2048x2048.png);
     background-size: cover;
     outline: inherit;
+    cursor: pointer;
 }
 
 .delete_button {
@@ -74,6 +66,7 @@ div.block {
     background-image: url(https://static.thenounproject.com/png/2995127-200.png);
     background-size: cover;
     outline: inherit;
+    cursor: pointer;
 }
 
 .adding_button {
@@ -87,6 +80,6 @@ div.block {
     outline: inherit;
     margin-top: 10px;
     display: flex;
-    margin-right: 0%;
     margin-left: auto;
+    cursor: pointer;
 }
