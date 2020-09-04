@@ -14,7 +14,7 @@ function NewTodo() {
     var div = document.createElement('div');
     var generation = Math.random() * 1234;
     var key = ("ID"+generation.toString()).substr(0, 16);
-    div.innerHTML='<div class="block" id="'+key+'"><input type="checkbox" class="checkbox_class" onclick="Done(this)"><input type="text" class="text_area" name="message"><input type="button" class="edit_button" onclick="Edit(this)"><input type="button" class="delete_button" onclick="Delete(this)"></div>'
+    div.innerHTML='<div class="block" id="'+key+'"><input type="checkbox" class="checkbox_class" onclick="Done(this)"><input type="text" class="text_area" name="message" required><input type="button" class="edit_button" onclick="Edit(this)"><input type="button" class="delete_button" onclick="Delete(this)"></div>'
 
     var myDiv = document.getElementById("current");
     var parentDiv = myDiv.parentNode;
@@ -24,9 +24,14 @@ function NewTodo() {
 
 
 function Done(elem) {
-    var status = elem.checked
+    var status = elem.checked;
     var element = elem.parentElement;
     var message;
+    if (!element.firstChild.nextSibling.value) {
+        alert("Enter the task");
+        element.firstChild.disabled = false;
+        return;
+    }
     if(status === false){
         var myDiv = document.getElementById("current");
         myDiv.appendChild(element);
@@ -40,8 +45,8 @@ function Done(elem) {
         var myDiv = document.getElementById("to-dos");
         myDiv.appendChild(element);
         element.firstChild.nextSibling.disabled = true;
-        element.firstChild.nextSibling.nextSibling.disabled = true;
         element.firstChild.nextSibling.style.textDecoration = 'line-through';
+        element.firstChild.nextSibling.nextSibling.disabled = true;
         element.firstChild.nextSibling.nextSibling.style.backgroundImage = 'url("https://www.materialui.co/materialIcons/action/done_black_2048x2048.png")';
         element.style.backgroundColor = "lightgray";
         message = 'D'+element.firstChild.nextSibling.value;
